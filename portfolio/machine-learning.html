@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Machine Learning — Võ Ngọc Vương</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="container nav-row">
+    <a href="index.html" class="nav-brand">
+      <span class="badge">VNV</span>
+      <span class="name">Võ Ngọc Vương</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Trang chủ</a>
+      <a href="about.html">Giới thiệu</a>
+      <a href="projects.html">Dự án</a>
+      <a href="dashboards.html">Dashboard</a>
+      <a href="machine-learning.html">Machine Learning</a>
+      <a href="certificates.html">Chứng chỉ</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Liên hệ</a>
+    </div>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-accent btn-sm"><span class="full">Liên hệ</span></a>
+      <button class="nav-toggle" aria-label="Mở menu"><span></span></button>
+    </div>
+  </div>
+  <div class="rule-ticks"></div>
+</nav>
+
+<header class="section" style="padding-bottom:8px;">
+  <div class="container">
+    <div class="eyebrow">Machine Learning</div>
+    <h1 style="font-size:34px;">Mô hình &amp; Kết quả thực nghiệm</h1>
+    <p style="max-width:60ch; color:var(--muted);">Các thuật toán mình đã huấn luyện, so sánh và đánh giá trong những dự án dự báo &amp; phân loại.</p>
+  </div>
+</header>
+
+<!-- ================= MODELS ================= -->
+<section class="section" style="padding-top:8px;">
+  <div class="container">
+    <div class="grid grid-4">
+      <div class="card model-card">
+        <div class="eyebrow">Regression</div>
+        <h3>Linear Regression</h3>
+        <p style="color:var(--muted); font-size:14px;">Mô hình nền tảng dùng làm baseline trong bài toán dự báo dân số &amp; lực lượng lao động.</p>
+      </div>
+      <div class="card model-card">
+        <div class="eyebrow">Ensemble</div>
+        <h3>Random Forest</h3>
+        <p style="color:var(--muted); font-size:14px;">Kết hợp nhiều cây quyết định, dùng cho cả bài toán dự báo &amp; phân loại (ung thư tuyến giáp).</p>
+      </div>
+      <div class="card model-card">
+        <div class="eyebrow">Ensemble / Boosting</div>
+        <h3>XGBoost</h3>
+        <p style="color:var(--muted); font-size:14px;">Gradient boosting hiệu quả cao, thử nghiệm cho bài toán phân loại y tế.</p>
+      </div>
+      <div class="card model-card">
+        <div class="eyebrow">Deep Learning</div>
+        <h3>LSTM</h3>
+        <p style="color:var(--muted); font-size:14px;">Mạng nơ-ron hồi quy dùng cho chuỗi thời gian, so sánh với mô hình học máy truyền thống.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FIGURES ================= -->
+<section class="section section-alt" data-lightbox-group>
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Kết quả trực quan</div>
+      <h2>Đánh giá mô hình bằng hình ảnh</h2>
+      <p>Trích từ đồ án <em>Dự đoán Dân số &amp; Lực lượng Lao động Việt Nam</em> và dự án <em>Dự đoán tái phát Ung thư Tuyến giáp</em>.</p>
+    </div>
+    <div class="grid grid-3">
+      <figure class="figure">
+        <img data-full="assets/img/projects/du-doan-dan-so/correlation.png" data-caption="Ma trận tương quan giữa các biến đầu vào" src="assets/img/projects/du-doan-dan-so/correlation.png" alt="Ma trận tương quan" style="cursor:pointer;">
+        <figcaption>Ma trận tương quan (Correlation Matrix)</figcaption>
+      </figure>
+      <figure class="figure">
+        <img data-full="assets/img/projects/du-doan-dan-so/actual-vs-predicted.png" data-caption="So sánh giá trị thực tế và giá trị dự đoán" src="assets/img/projects/du-doan-dan-so/actual-vs-predicted.png" alt="So sánh thực tế và dự đoán" style="cursor:pointer;">
+        <figcaption>So sánh Thực tế vs. Dự đoán</figcaption>
+      </figure>
+      <figure class="figure">
+        <img data-full="assets/img/projects/ung-thu-tuyen-giap/3.png" data-caption="Kết quả đánh giá mô hình phân loại ung thư tuyến giáp" src="assets/img/projects/ung-thu-tuyen-giap/3.png" alt="Đánh giá mô hình phân loại" style="cursor:pointer;">
+        <figcaption>Đánh giá mô hình phân loại</figcaption>
+      </figure>
+      <figure class="figure">
+        <img data-full="assets/img/projects/ung-thu-tuyen-giap/2.png" data-caption="Phân tích dữ liệu đầu vào" src="assets/img/projects/ung-thu-tuyen-giap/2.png" alt="Phân tích dữ liệu" style="cursor:pointer;">
+        <figcaption>Phân tích dữ liệu đầu vào (EDA)</figcaption>
+      </figure>
+      <figure class="figure">
+        <img data-full="assets/img/projects/ung-thu-tuyen-giap/4.png" data-caption="Kết quả chi tiết mô hình" src="assets/img/projects/ung-thu-tuyen-giap/4.png" alt="Kết quả chi tiết" style="cursor:pointer;">
+        <figcaption>Kết quả chi tiết mô hình</figcaption>
+      </figure>
+      <figure class="figure">
+        <img data-full="assets/img/projects/du-doan-dan-so/dashboard.png" data-caption="Dashboard tổng hợp dự báo" src="assets/img/projects/du-doan-dan-so/dashboard.png" alt="Dashboard tổng hợp" style="cursor:pointer;">
+        <figcaption>Dashboard tổng hợp dự báo</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LIGHTBOX ================= -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" aria-label="Đóng">✕</button>
+  <button class="lightbox-nav lightbox-prev" aria-label="Ảnh trước">‹</button>
+  <img src="" alt="">
+  <button class="lightbox-nav lightbox-next" aria-label="Ảnh sau">›</button>
+  <div class="lightbox-caption"></div>
+</div>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-row">
+      <div>
+        <div style="font-family:var(--font-display); font-size:18px; color:#fff; margin-bottom:6px;">Võ Ngọc Vương</div>
+        <div style="font-size:13.5px;">Data Analyst · Power BI · Python · Machine Learning</div>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:vngocvuongha@gmail.com">Email</a>
+        <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="contact.html">Liên hệ</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year></span> Võ Ngọc Vương. Được xây dựng thủ công, không dùng template.</span>
+      <span>TP.HCM, Việt Nam</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
